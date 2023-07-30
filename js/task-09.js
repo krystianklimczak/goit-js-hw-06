@@ -7,6 +7,7 @@ function getRandomHexColor() {
 const changeColorBtn = document.querySelector('.change-color');
 const siteBody = document.querySelector('body');
 const paragraphOfColor = document.querySelector('.color');
+paragraphOfColor.textContent = '#fafafa';
 
 changeColorBtn.addEventListener('click', changeColor);
 
