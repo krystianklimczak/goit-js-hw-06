@@ -28,8 +28,8 @@ createBtn.addEventListener('click', () => {
 });
 
 destroyBtn.addEventListener('click', () => {
-  while (boxOfBoxes.firstChild) {
-    boxOfBoxes.removeChild(boxOfBoxes.lastChild);
+  while (boxOfBoxes.firstElementChild) {
+    boxOfBoxes.removeChild(boxOfBoxes.lastElementChild);
   }
   boxSize = 30;
 });
