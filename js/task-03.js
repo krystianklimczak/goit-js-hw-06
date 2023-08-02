@@ -14,13 +14,13 @@ const images = [
 ];
 
 const galleryList = document.querySelector('.gallery');
-// const galleryArray = [];
+const galleryArray = [];
 images.forEach(img => {
   const image = document.createElement('li');
   const imageString = `<img src="${img.url}" alt="${img.alt}"></img>`;
   image.insertAdjacentHTML('afterbegin', imageString);
-  galleryList.append(image);
-  // galleryArray.push(image);
+  // galleryList.append(image);
+  galleryArray.push(image);
 });
 
-// galleryList.append(...galleryArray);
+galleryList.append(...galleryArray);
