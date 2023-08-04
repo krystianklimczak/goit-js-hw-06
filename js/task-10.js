@@ -32,4 +32,7 @@ destroyBtn.addEventListener('click', () => {
     boxOfBoxes.removeChild(boxOfBoxes.lastElementChild);
   }
   boxSize = 30;
+  // zamiast całej tej funkcji mogła by być z innerHTML
+  // boxOfBoxes.innerHTML = '';
+  // boxSize = 30;
 });
